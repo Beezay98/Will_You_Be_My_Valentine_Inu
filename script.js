@@ -13,11 +13,8 @@ const noMessages = [
     "No",
     "Are you positive? 🤔",
     "Pookie please... 🥺",
-    "If you say no, I will be really sad...",
-    "I will be very sad... 😢",
-    "Please??? 💔",
-    "Don't do this to inu",
-    "Last chance! 😭",
+    "If you say no, I will be really sad...😔",
+    "Don't do this to me inu😓",
     "You can't catch me anyway 😜"
 ]
 
@@ -142,4 +139,5 @@ function runAway() {
     noBtn.style.left = `${randomX}px`
     noBtn.style.top = `${randomY}px`
     noBtn.style.zIndex = '50'
+
 }
