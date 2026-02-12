@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yay! 🎉</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <!-- Animated Background Elements -->
+    <div class="hearts-bg"></div>
+    <div class="sparkles-container"></div>
+    <div class="romantic-particles"></div>
+
+    <!-- Main YES Content (Original - Untouched) -->
+    <div class="container yes-container">
+        <h1 class="yes-title">Knew you would say yes! 🎉</h1>
+
+        <div class="gif-container">
+            <img id="cat-gif" src="https://media.tenor.com/eNHbizSfVb0AAAAj/lovemode-cute.gif" alt="celebrating">
+        </div>
+
+        <p class="yes-message">You just made me the happiest person! 💕</p>
+
+        <!-- ========== NEW FEATURE 1: Memory Door Section ========== -->
+        <div class="memory-door-section">
+            <div class="door-container" id="door-container">
+                <div class="door-wrapper">
+                    <div class="door-left" id="door-left">
+                        <div class="door-handle left-handle"></div>
+                    </div>
+                    <div class="door-right" id="door-right">
+                        <div class="door-handle right-handle"></div>
+                    </div>
+                    <div class="door-text">Click to open our beautiful memories 💕</div>
+                </div>
+            </div>
+
+            <!-- Slideshow (Hidden Initially) -->
+            <div class="slideshow-container" id="slideshow-container">
+                <div class="slideshow-wrapper">
+                    <button class="slide-nav prev" id="prev-btn">❮</button>
+                    
+                    <div class="slides-track">
+                        <div class="slide active">
+                            <img src="img11.JPEG" alt="Memory 1">
+                            <p class="slide-caption">Our beautiful journey together ✨</p>
+                        </div>
+                        <div class="slide">
+                            <img src="img1.1.jpeg" alt="Memory 2">
+                            <p class="slide-caption">Every moment with you is magic 💫</p>
+                        </div>
+                        <div class="slide">
+                            <img src="img3.jpeg" alt="Memory 3">
+                            <p class="slide-caption">You make my heart smile 💗</p>
+                        </div>
+                        <div class="slide">
+                            <img src="img10.JPEG" alt="Memory 4">
+                            <p class="slide-caption">With you everything feels right.🌸</p>
+                        </div>
+                        <div class="slide">
+                            <img src="img5.jpeg" alt="Memory 5">
+                            <p class="slide-caption"> Just You.. always you.💕</p>
+                        </div>
+                        <div class="slide">
+                            <img src="img6.PNG" alt="Memory 5">
+                            <p class="slide-caption">Together is my favorite place 💕</p>
+                        </div>
+                        <div class="slide">
+                            <img src="img7.PNG" alt="Memory 5">
+                            <p class="slide-caption">Together is my favorite place 💕</p>
+                        </div>
+                        <div class="slide">
+                            <img src="img8.jpeg" alt="Memory 5">
+                            <p class="slide-caption">Whenever you smile at me.. You give me buttflies. 💕</p>
+                            
+                        </div>
+                        <div class="slide">
+                            <img src="img9.jpeg" alt="Memory 5">
+                            <p class="slide-caption">You cast a love spell on me😄 💕</p>
+                            
+                    
+                        </div>
+                        <div class="slide">
+                            <img src="img1.jpeg" alt="Memory 5">
+                            <p class="slide-caption">Life is kinda B/W without you bae.🥺</p>
+                        </div>
+                    </div>
+                    
+                    <button class="slide-nav next" id="next-btn">❯</button>
+                </div>
+                <div class="slide-indicators" id="indicators"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== NEW FEATURE 2: Love Letter Modal ========== -->
+    <div class="love-letter-modal" id="love-letter-modal">
+        <div class="modal-backdrop"></div>
+        <div class="floating-hearts-modal">
+            <span class="heart-float">💕</span>
+            <span class="heart-float">💗</span>
+            <span class="heart-float">💖</span>
+            <span class="heart-float">💝</span>
+        </div>
+        <div class="love-letter-card">
+            <button class="close-letter" id="close-letter">×</button>
+            <div class="letter-content">
+                <h2 class="letter-title">My Dearest Love 💌</h2>
+                <div class="letter-body">
+                    <p>My Love Inu,</p>
+                    <p>If I could pause time for a moment, I would choose the seconds when you smile.
+Because in that smile, everything feels safe, warm, and right..</p>
+                    
+                    <p>I don’t know how you did it, but somehow you became my favorite thought.
+The first person I want to tell things to.
+The one I look for in every happy moment.</p>
+                    
+                    <p>Being with you doesn’t feel loud or dramatic.
+It feels calm. It feels certain.
+Like coming home after a long day.</p>
+                    <p>You make ordinary days feel special.
+You make simple conversations feel important.
+And somehow, just knowing you’re there makes everything lighter.
+</p>
+<p>I don’t just like you.
+I admire you.
+Your heart. Your kindness. The way you care. The way you laugh.
+Even the little things you don’t notice about yourself, I notice them.</p>
+<p>If loving you means choosing you every day,
+then I promise… I’ll keep choosing you. Not just today.
+Not just on Valentine’s Day.
+But On tired evenings. On happy mornings.
+Every single day.</p>
+<p>Thank you for being you.
+Thank you for being mine</p>
+                    <p class="letter-signature">With all my heart,<br>Yours always Subu❤️💕</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== NEW FEATURE 3: Flying Clickable Hearts ========== -->
+    <div class="flying-hearts-container">
+        <div class="flying-heart" data-message="You are my favorite person 🌟">
+            <span class="heart-icon">💗</span>
+            <span class="heart-hint">Click me</span>
+        </div>
+        <div class="flying-heart" data-message="Every day with you feels magical ✨">
+            <span class="heart-icon">💖</span>
+            <span class="heart-hint">Click me</span>
+        </div>
+        <div class="flying-heart" data-message="You make my world brighter 🌞">
+            <span class="heart-icon">💕</span>
+            <span class="heart-hint">Click me</span>
+        </div>
+        <div class="flying-heart" data-message="I'm so lucky to have you 🍀">
+            <span class="heart-icon">💝</span>
+            <span class="heart-hint">Click me</span>
+        </div>
+        <div class="flying-heart" data-message="Forever sounds perfect with you 💫">
+            <!-- <span class="heart-icon">💓</span> -->
+            <!-- <span class="heart-hint">Click me</span> -->
+        </div>
+        <div class="flying-heart" data-message="You are my greatest blessing 🌺">
+            <span class="heart-icon">💗</span>
+            <span class="heart-hint">Click me</span>
+        </div>
+    </div>
+
+    <!-- Original Audio & Controls -->
+    <audio id="bg-music" loop>
+        <source src="beabadoobee - Glue Song (Lyrics).mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="music-toggle" onclick="toggleMusic()" title="Toggle music">🔊</button>
+
+    <script src="yes-script.js"></script>
+</body>
+</html>
